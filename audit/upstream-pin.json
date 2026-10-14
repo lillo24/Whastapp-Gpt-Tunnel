@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/lharries/whatsapp-mcp.git",
+  "commit": "7d6a06dcdce1f01dfb24f60e1030d5efba9f3b88",
+  "observed_at": "2026-10-12",
+  "license": "MIT",
+  "source_directory": ".audit/upstream",
+  "dependency_directory": "audit/dependency-inputs"
+}

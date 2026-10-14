@@ -1,0 +1,26 @@
+# Redacted shape from the inspected v0.0.16 stdio sample. Not a live profile.
+# Keep the actual generated profile outside source in a protected directory.
+config_version: 1
+control_plane:
+  base_url: "https://api.openai.com"
+  tunnel_id: "tunnel_00000000000000000000000000000000"
+  api_key: "env:WA_TUNNEL_API_KEY"
+health:
+  listen_addr: "127.0.0.1:0"
+admin_ui:
+  allow_remote: false
+  open_browser: false
+  log_buffer_events: 1
+log:
+  level: warn
+  format: json
+  http_raw_unsafe: false
+mcp:
+  stdio_send_initialized_notification: true
+  forward_trace_context: false
+  commands:
+    - channel: main
+      command: '"C:/absolute/checkout/readonly_mcp/.venv/Scripts/python.exe" -I "C:/absolute/checkout/scripts/tunnel_mcp_child.py"'
+# The fixed trusted launcher removes the tunnel key, then invokes UV with
+# --directory <absolute readonly_mcp> run --locked --offline --no-sync python main_readonly.py.
+# Actual generated JSON/YAML also sets the reviewed org ID and protected health URL file.

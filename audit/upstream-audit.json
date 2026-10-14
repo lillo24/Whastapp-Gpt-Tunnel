@@ -1,0 +1,222 @@
+{
+  "commit": "7d6a06dcdce1f01dfb24f60e1030d5efba9f3b88",
+  "dependency_sha256": {
+    "LICENSE": "86861f8ef4b108e301646f0f599eda922838d14c20303115c243338a70f9c3a0",
+    "whatsapp-bridge/go.mod": "071a8525a7470cf28e517f324ebdd734f12bca3870e506987db842573b6f6d73",
+    "whatsapp-bridge/go.sum": "dac58fb4ed9b844362ec2f564dc8c07045be888aefcb4342fd6f00224628e29a",
+    "whatsapp-mcp-server/pyproject.toml": "d505213ebea640c9014f0fed9b3832ab78763e7cf76018180f37675bbc39802c",
+    "whatsapp-mcp-server/uv.lock": "d56a43d4ed379e35af6042c1837472faffe5ba8b36472b54f5d89f80e85e9db3",
+    "whatsapp-mcp-server/.python-version": "49a506dd32096b010d75205acf3430c9ae6c40351888129499e5a5e487126c93"
+  },
+  "reviewed_source_sha256": {
+    "LICENSE": "86861f8ef4b108e301646f0f599eda922838d14c20303115c243338a70f9c3a0",
+    "whatsapp-bridge/go.mod": "071a8525a7470cf28e517f324ebdd734f12bca3870e506987db842573b6f6d73",
+    "whatsapp-bridge/go.sum": "dac58fb4ed9b844362ec2f564dc8c07045be888aefcb4342fd6f00224628e29a",
+    "whatsapp-bridge/main.go": "0f8a6ac2875e77b9ef4000c75b4722ac35fd7e4770042164bd050fba5e54b998",
+    "whatsapp-mcp-server/.python-version": "49a506dd32096b010d75205acf3430c9ae6c40351888129499e5a5e487126c93",
+    "whatsapp-mcp-server/audio.py": "cf0e97d800da13bc466789c8b920424d11e59bb055ebce8cc2c344189083046d",
+    "whatsapp-mcp-server/main.py": "5c9c59adcab09d6ee0bedfe2e9eb68c3dca47616cb669f096d16f714ad78f3a3",
+    "whatsapp-mcp-server/pyproject.toml": "d505213ebea640c9014f0fed9b3832ab78763e7cf76018180f37675bbc39802c",
+    "whatsapp-mcp-server/uv.lock": "d56a43d4ed379e35af6042c1837472faffe5ba8b36472b54f5d89f80e85e9db3",
+    "whatsapp-mcp-server/whatsapp.py": "dc0e013ece15aab71c53433d8bdcaa84912c4a5f5b98df727914e7ef01b5ed1b"
+  },
+  "registered_tools": [
+    "search_contacts",
+    "list_messages",
+    "list_chats",
+    "get_chat",
+    "get_direct_chat_by_contact",
+    "get_contact_chats",
+    "get_last_interaction",
+    "get_message_context",
+    "send_message",
+    "send_file",
+    "send_audio_message",
+    "download_media"
+  ],
+  "findings": {
+    "go_send_calls": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        365,
+        1174
+      ]
+    },
+    "go_upload_calls": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        286
+      ]
+    },
+    "go_download_calls": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        644
+      ]
+    },
+    "go_http_handlers": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        681,
+        727
+      ]
+    },
+    "go_listeners": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        783
+      ]
+    },
+    "go_file_reads": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        237
+      ]
+    },
+    "go_file_writes": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        52,
+        589,
+        650,
+        798
+      ]
+    },
+    "go_logs": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        291,
+        321,
+        423,
+        455,
+        466,
+        468,
+        613,
+        654,
+        706,
+        710,
+        779,
+        784,
+        791,
+        792,
+        795,
+        799,
+        805,
+        815,
+        817,
+        825,
+        832,
+        849,
+        852,
+        865,
+        872,
+        883,
+        885,
+        892,
+        902,
+        906,
+        915,
+        920,
+        932,
+        941,
+        985,
+        988,
+        1002,
+        1010,
+        1024,
+        1076,
+        1131,
+        1136,
+        1139,
+        1147,
+        1153,
+        1158,
+        1163,
+        1170,
+        1180,
+        1182,
+        1245,
+        1260,
+        1268,
+        1272,
+        1287
+      ]
+    },
+    "go_pairing": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        862,
+        873
+      ]
+    },
+    "go_db_mutations": {
+      "path": "whatsapp-bridge/main.go",
+      "lines": [
+        64,
+        70,
+        104,
+        119,
+        490
+      ]
+    },
+    "python_http_posts": {
+      "path": "whatsapp-mcp-server/whatsapp.py",
+      "lines": [
+        637,
+        671,
+        711,
+        744
+      ]
+    },
+    "python_db_connections": {
+      "path": "whatsapp-mcp-server/whatsapp.py",
+      "lines": [
+        52,
+        138,
+        233,
+        328,
+        396,
+        444,
+        489,
+        538,
+        586
+      ]
+    },
+    "python_logs": {
+      "path": "whatsapp-mcp-server/whatsapp.py",
+      "lines": [
+        88,
+        111,
+        219,
+        312,
+        386,
+        428,
+        479,
+        528,
+        576,
+        619,
+        750,
+        753,
+        756,
+        760,
+        763,
+        766
+      ]
+    },
+    "audio_process_execution": {
+      "path": "whatsapp-mcp-server/audio.py",
+      "lines": [
+        52
+      ]
+    },
+    "audio_filesystem": {
+      "path": "whatsapp-mcp-server/audio.py",
+      "lines": [
+        33,
+        81,
+        91
+      ]
+    }
+  },
+  "scope": "Application source at pin; transitive protocol internals are not proven safe by this scan."
+}
